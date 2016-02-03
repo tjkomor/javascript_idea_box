@@ -1,8 +1,6 @@
 function deleteIdea() {
   $("[id^=removeIdea]").click(function(){
-    var ideaId = this.id.charAt(this.id.length - 1)
-
-    // console.log(idea.idea.charAt(idea.length - 1))
+    var ideaId = this.id.split(/[ ,]+/)[1]
 
     $.ajax({
       type: "DELETE",
