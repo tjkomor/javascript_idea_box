@@ -18,8 +18,8 @@
     <div id="<%= idea.id %>">
       <%= idea.title %><br>
       <%= idea.body %><br>
-      <%= idea.id %>
       <a href="#" id="removeIdea <%= idea.id %>" >Delete</a>
+      <a href="#" id="changeIdea <%= idea.id %>" >Edit</a>
     </div>
     <%#= link_to "Delete", api_v1_ideas_path, :id => "removeIdea" %>
     <br>
