@@ -14,6 +14,16 @@
   </div>
   <h5>My Ideas</h5>
   <div class="container" id="ideas-list">
-    <%= @ideas %>
+    <% @ideas.each do |idea| %><br>
+    <div id="<%= idea.id %>">
+      <%= idea.title %><br>
+      <%= idea.body %><br>
+      <%= idea.id %>
+      <a href="#" id="removeIdea <%= idea.id %>" >Delete</a>
+    </div>
+    <%#= link_to "Delete", api_v1_ideas_path, :id => "removeIdea" %>
+    <br>
+    <% end %>
+    <br>
   </div>
 </div>
