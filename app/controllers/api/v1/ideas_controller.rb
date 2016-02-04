@@ -11,7 +11,6 @@ class Api::V1::IdeasController < ApplicationController
   end
 
   def update
-    binding.pry
     @idea = Idea.update(params[:id], idea_params)
     respond_with @idea
   end

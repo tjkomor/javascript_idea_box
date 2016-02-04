@@ -10,3 +10,4 @@ var renderPost = function(idea) {
     '</button>' + '</p>' + '</div>'
   )
 };
+;

@@ -18,4 +18,5 @@ $(document).ready(function(){
   postIdea();
   deleteIdea();
   updateIdea();
+  renderPost();
 });
